@@ -14,3 +14,8 @@ para iniciar backend siga o passo a passo:
 2. instale os pacotes: npm i 
 3. instale o jsonServer : npm i json-server
 4. inicie a api-Fake : json-server --watch db.json
+
+#grid 
+execicio de grid
+
+#aquivo png wireFrame 

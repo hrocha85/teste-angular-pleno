@@ -1,0 +1,25 @@
+
+<div class="cor-bg container-fluid" >
+  <h1 class="text-center">
+    Lista Filmes
+  </h1>
+  <div class="div-paragrafo">
+    <input (keyup)="buscar(termo)" [(ngModel)]="termo" a autofocus class="form-control text-center" type="text" width="250px" placeholder="Digite para pesquisar...">
+  </div>
+
+<div class="text-center" *ngIf="!listaVazia" style="margin: 40px;" >
+  <h1>Nenhum titulo encontrado</h1>
+</div>
+  <div class="text-center lista-filmes" *ngFor="let filmes of listaDeFilmes"  >
+    <img src={{filmes.poster}} alt={{filmes.nome}} width="200px" style="margin-bottom: 10px;">
+    <h4>Nome do filme: <b>{{filmes.nome}}</b></h4>
+    <h3>Ano: {{filmes.ano}}</h3>
+    <h3>Diretor: {{filmes.diretor}}</h3>
+    <h3>Genero: {{filmes.genero}}</h3>
+    <div class="row div-paragrafo">
+      <p class="paragrafo">Desecrição: {{filmes.descricao}}</p>
+    </div>
+
+  </div>
+
+</div>

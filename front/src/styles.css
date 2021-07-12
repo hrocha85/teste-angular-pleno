@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.cor-action-bg{
+  background-color:#0F4970 ;
+}
+
+
+.cor-sub-bg{
+  background-color:#428CBD ;
+}
+
+.cor-bg{
+  background-color:#9DD0F2 ;
+}

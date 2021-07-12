@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+</head>
+<body>
+<div class="grid">
+ <div class="azul"></div>
+ <div class="degrade"></div>
+ <div class="imagem"><p>imagem com texto, Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur sunt quae in at iure eum veritatis, fugiat dicta quis nisi assumenda quia numquam saepe? Ipsum dolores quia consequatur eius nam?</p></div>
+</div>
+</body>
+<style>
+    .grid{
+  
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: 100vh;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+
+    .azul{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        background-color: blue
+        ;
+    }
+    .degrade{
+        grid-column-start: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background-image: linear-gradient(to right top, #051937, #2d415b, #586c80, #899aa6, #bfcacf);
+    }
+    .imagem{
+        grid-column-start: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        background-size: cover;
+        background-image: url('https://www.10wallpaper.com/wallpaper/1366x768/1107/down_before_the_blue_sky_wallpaper_1366x768.jpg');
+        justify-content: center;
+       align-items: center;
+        display: flex;
+    }
+    p{
+        margin: 10px;
+      
+    }
+
+</style>
+</html>
